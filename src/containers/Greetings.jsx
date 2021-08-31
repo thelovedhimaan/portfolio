@@ -25,7 +25,7 @@ const Greetings = () => {
         <main ref="main">
           <div className="position-relative">
             <section className="section section-lg section-shaped pb-250">
-              <div className="shape shape-style-1 bg-gradient-info">
+              <div className="shape shape-style-1 bg-gradient-darker">
                 <span />
                 <span />
                 <span />
@@ -49,6 +49,7 @@ const Greetings = () => {
                         <Button
                           className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
                           color="default"
+                          target="_blank"
                           href={greetings.resumeLink}
                         >
                           <span className="btn-inner--icon mr-1">

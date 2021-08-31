@@ -10,7 +10,7 @@ const EdutionCard = ({ education }) => {
 				<CardBody>
 					<div className="d-flex px-3">
 						<div className="pl-4">
-							<h5 className="text-info">
+							<h5 className="text-dark">
 								{education.schoolName}
 							</h5>
 							<h6>{education.subHeader}</h6>

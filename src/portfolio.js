@@ -8,8 +8,9 @@ export const greetings = {
    name: 'Love Dhimaan',
    title: "Hi all, I'm Love",
    description:
-      'A passionate Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / Python / Django / Flask and some other cool libraries and frameworks and Cross Platform Mobile Apps With Flutter.',
-   resumeLink: 'https://cv.Love.ga',
+      'A passionate Full Stack Web Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / MongoDB / Redux / Figma and some other cool libraries and frameworks.',
+   resumeLink:
+      'https://docs.google.com/document/d/1_HP-JHwAzSlVcqG2I10_AfpktqmHeLHjd21TCSXga4w/edit?usp=sharing',
 };
 
 export const openSource = {

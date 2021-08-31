@@ -45,7 +45,7 @@ const Skills = () => {
                     <div>
                         {
                             skillsSection.skills.map(skill => {
-                                return <p key={skill}>{skill}</p>
+                                return <p className='lead2' key={skill}>{skill}</p>
                             })
                         }
                     </div>

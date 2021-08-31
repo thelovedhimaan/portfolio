@@ -9,12 +9,12 @@ import {
 
 const Edution = () => {
     return ( 
-        <section className="section pb-0 bg-gradient-info my-5">
+        <section className="section pb-0 bg-gradient-darker my-5">
             <Container>
                 <div className="d-flex px-3">
                     <div>
-                        <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
-                        <i className="ni ni-books text-info" />
+                        <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-dark">
+                        <i className="ni ni-books text-dark" />
                         </div>
                     </div>
                     <div className="pl-4">
@@ -29,6 +29,9 @@ const Edution = () => {
                     }
                 </Row>
             </Container>
+            <br/>
+            <br/>
+            <br/>
             <div className="separator separator-bottom separator-skew zindex-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
