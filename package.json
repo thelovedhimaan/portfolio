@@ -1,33 +1,49 @@
 {
-  "private": true,
-  "name": "cara",
-  "description": "Playful and Colorful One-Page portfolio featuring Parallax effects and animations",
-  "version": "0.2.10",
-  "author": "LekoArts <hello@lekoarts.de>",
-  "license": "0BSD",
-  "starter-name": "gatsby-starter-portfolio-cara",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
-    "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "dependencies": {
-    "@lekoarts/gatsby-theme-cara": "^2.0.0",
-    "gatsby": "^3.6.1",
-    "gatsby-plugin-gatsby-cloud": "^2.6.1",
-    "gatsby-plugin-google-analytics": "^3.6.0",
-    "gatsby-plugin-manifest": "^3.6.0",
-    "gatsby-plugin-netlify": "^3.6.1",
-    "gatsby-plugin-offline": "^4.6.0",
-    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.22",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-    "cross-env": "^7.0.3"
-  }
+	"name": "developer-portfolio",
+	"version": "1.0.0",
+	"description": "Software Developer Portfolio Template built with react.js bootstrap that helps you showcase your work and skills as a software developer.",
+	"main": "index.js",
+	"repository": "https://github.com/1Love100/Love-portfolio.git",
+	"author": "Love Dhimaan",
+	"license": "MIT",
+	"dependencies": {
+		"@apollo/client": "^3.3.21",
+		"axios": "^0.21.1",
+		"bootstrap": "^5.0.2",
+		"classnames": "^2.3.1",
+		"colorthief": "^2.3.2",
+		"graphql": "^15.5.1",
+		"headroom.js": "^0.12.0",
+		"moment": "^2.29.1",
+		"nouislider": "^15.2.0",
+		"react": "^17.0.2",
+		"react-datetime": "^3.0.4",
+		"react-dom": "^17.0.2",
+		"react-easy-emoji": "^1.5.0",
+		"react-headroom": "^3.1.1",
+		"react-lottie": "^1.2.3",
+		"react-reveal": "^1.2.2",
+		"react-router": "^5.2.0",
+		"react-scripts": "^4.0.3",
+		"react-typist": "^2.0.5",
+		"reactstrap": "^8.9.0"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
 }

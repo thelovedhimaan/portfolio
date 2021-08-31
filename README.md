@@ -1,114 +1,118 @@
-<p align="center">
-  <a href="https://cara.lekoarts.de">
-    <img alt="LekoArts" src="https://img.lekoarts.de/gatsby/gatsby-site-illustration.png" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Starter Portfolio: Cara
-</h1>
+<h1 align="center">Welcome to developer-portfolio 👋</h1>
+<a href="https://github.com/1Love100/developer-portfolio/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/1Love100/developer-portfolio"></a><a href="https://github.com/1Love100/developer-portfolio/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/1Love100/developer-portfolio"></a><a href="https://github.com/1Love100/developer-portfolio/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/1Love100/developer-portfolio"></a> <a href="https://github.com/1Love100/developer-portfolio/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/1Love100/developer-portfolio"></a>
+
+## Software Developer Portfolio Template built with react.js bootstrap that helps you showcase your work and skills as a software developer.
 
 <p align="center">
-  <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/license-0BSD-blue.svg" alt="Gatsby Starter Portfolio: Cara is released under the 0BSD license." />
-  </a>
-  <a href="https://github.com/sponsors/LekoArts">
-    <img alt="GitHub Sponsors" src="https://img.shields.io/github/sponsors/LekoArts">
-  </a>
-  <a href="https://www.lekoarts.de?utm_source=cara&utm_medium=Starter">
-    <img alt="Website" src="https://img.shields.io/badge/-website-blue">
-  </a>
-  <a href="https://twitter.com/intent/follow?screen_name=lekoarts_de">
-    <img src="https://img.shields.io/twitter/follow/lekoarts_de.svg?label=Follow%20@lekoarts_de" alt="Follow @lekoarts_de" />
-  </a>
+  <kbd>
+    <img src="https://github.com/1Love100/developer-portfolio/blob/master/picture.PNG"></img>
+  </kbd>
 </p>
 
-Playful and Colorful One-Page portfolio featuring Parallax effects and animations. Using the Gatsby Theme [`@lekoarts/gatsby-theme-cara`](https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-cara).
+### To view a live example, **[click here](https://developer-portfolio.1Love100.vercel.app/)**.
 
-[**Demo Website**](https://cara.lekoarts.de)
+Just Edit `src/portfolio.js` to get your personal portfolio. Feel free to use it as-is or customize it as much as you want.
 
-Also be sure to check out other [Free & Open Source Gatsby Themes](https://themes.lekoarts.de) and my [Personal Website](https://www.lekoarts.de?utm_source=cara&utm_medium=Starter).
+But if you want to **contribute** and make this much better for other developer have a look at [Issues](https://github.com/1Love100/developer-portfolio/issues).
 
-## ✨ Features
+If you created something awesome and want to contribute then feel free to open an [pull request](https://github.com/1Love100/developer-portfolio/pulls).
 
-- Theme UI-based theming
-- react-spring parallax effect
-- CSS Animations on Shapes
+## Table of Contents
 
-## 🚀 Getting Started
+-  [Sections](#sections)
+-  [Getting Started](#getting-started)
+-  [How to Use](#how-to-use)
+-  [Linking portfolio to Github](#linking-portfolio-to-github)
+-  [Change and Customize](#change-and-customize-every-section-according-to-your-need)
+-  [Technologies Used](#technologies-used)
+-  [Illustrations](#illustrations)
+-  [For the Future](#for-the-future)
+-  [Contributors](#project-maintainers)
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/LekoArts/gatsby-starter-portfolio-cara)
+## Sections
 
-### 1. **Create a Gatsby site.**
+✔️ Summary and About me\
+✔️ Skills\
+✔️ Education\
+✔️ Work Experience\
+✔️ Projects\
+✔️ Github Profile
 
-Use `git` to clone the site and navigate into it:
+## Getting Started
 
-```sh
-git clone https://github.com/LekoArts/gatsby-starter-portfolio-cara project-name
-cd project-name
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer.
+<br>
+**For Windows** Install Visual C++ Build Environment: [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools)
+
+```
+node@v10.16.0 or higher
+npm@6.9.0 or higher
+git@2.17.1 or higher
 ```
 
-### 2. **Install dependencies.**
+## How To Use
 
-If you use npm 7 or above use the `--legacy-peer-deps` flag. If you use npm 6 you can use `npm install`.
+From your command line, clone and run developer-portolio:
 
-```sh
-npm install --legacy-peer-deps
+```bash
+# Clone this repository
+$ git clone https://github.com/1Love100/developer-portfolio.git
+
+# Go into the repository
+$ cd developer-portfolio
+
+# Install dependencies
+$ yarn
+
+#Start's development server
+$ yarn start
 ```
 
-### 3. **Open the code and start customizing!**
+## Linking Portfolio to Github
 
-Start the site by running `npm run develop`.
-
-Your site is now running at `http://localhost:8000`!
-
-If you want to learn more about how you can use a Gatsby starter that is configured with a Gatsby theme, you can check out this [shorter](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/using-a-gatsby-theme/) or [longer](https://www.gatsbyjs.com/tutorial/using-a-theme/) tutorial. The tutorials don't exactly apply to this starter however the concepts are the same.
-
-## 📝 Using and modifying this starter
-
-**Important Note:** Please read the guide [Shadowing in Gatsby Themes](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/shadowing/) to understand how to customize the underlying theme!
-
-This starter creates a new Gatsby site that installs and configures the theme [`@lekoarts/gatsby-theme-cara`](https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-cara).
-
-Have a look at the theme's README and files to see what options are available and how you can shadow the various components including Theme UI. Generally speaking you will want to place your files into `src/@lekoarts/gatsby-theme-cara/` to shadow/override files. The Theme UI config can be configured by shadowing its files in `src/gatsby-plugin-theme-ui/`.
-
-### Changing content
-
-The content of this project is defined in four `.mdx` files inside the theme's `sections` folder. You can override the files `intro.mdx`, `projects.mdx`, `about.mdx` and `contact.mdx`. This starter has overridden the `intro.mdx` file as an example. Place the other files in the same `src/@lekoarts/gatsby-theme-cara/sections/` folder.
-
-You have to use the `<ProjectCard />` component inside `projects.mdx` to display the cards. Example:
-
-```md
-## Projects
-
-<ProjectCard title="Freiheit" link="https://www.behance.net/gallery/58937147/Freiheit" bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)">
-This project is my entry to Adobe's #ChallengeYourPerspective contest.
-</ProjectCard>
+```javascript
+  //  portfolio.js
+  githubUserName: 'YOUR GITHUB USERNAME HERE',
 ```
 
-### Change your `static` folder
+#### Using Emojis
 
-The `static` folder contains the icons, social media images and robots.txt. Don't forget to change these files, too!
+For adding emoji 😃 into the texts in `Portfolio.js`, use the `emoji()` function and pass the text you need as an argument. This would help in keeping emojis compatible across different browsers and platforms.
 
-## 🤔 Questions or problems?
+## Technologies Used
 
-Please open up an issue on the main repository: [LekoArts/gatsby-themes](https://github.com/LekoArts/gatsby-themes). Thanks!
+-  [React](https://reactjs.org/)
+-  [axios](https://www.npmjs.com/package/axios)
+-  [reactstrap](https://reactstrap.github.io/)
+-  [react-reveal](https://www.react-reveal.com/)
+-  [react-lottie](https://www.npmjs.com/package/react-lottie)
+-  [react-easy-emoji](https://github.com/appfigures/react-easy-emoji)
+-  [react-headroom](https://github.com/KyleAMathews/react-headroom)
+-  [color-thief](https://github.com/lokesh/color-thief)
 
-## 🎓 Learning Gatsby
+## Illustrations
 
-Looking for more guidance? Full documentation for Gatsby lives [on Gatsby's website](https://www.gatsbyjs.com/).
+-  [Lottie File Source](https://lottiefiles.com)
 
-### Themes
+## For the Future
 
-- To learn more about Gatsby themes specifically, we recommend checking out the [theme docs](https://www.gatsbyjs.com/docs/themes/).
+If you can help us with these. Please don't hesitate to open a [pull request](https://github.com/saadpasta/developerFolio/pulls).
 
-### General
+-  Enable Dark Mode
 
-- **For most developers, I recommend starting with the [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/docs/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+-  Add More Sections
 
-- **To dive straight into code samples, head [to Gatsby's documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Reference Guides_ and _Gatsby API_ sections in the sidebar.
+## Author
 
-## 🌟 Supporting me
+👤 **Love Dhimaan**
 
-Thanks for using this project! I'm always interested in seeing what people do with my projects, so don't hesitate to tag me on [Twitter](https://twitter.com/lekoarts_de) and share the project with me.
+-  Website: https://Love.netlify.app
+-  Twitter: [@1Love100](https://twitter.com/1Love100)
+-  Github: [@1Love100](https://github.com/1Love100)
+-  LinkedIn: [@1Love100](https://linkedin.com/in/1Love100)
 
-Please star this project, share it on Social Media or consider supporting me on [Patreon](https://www.patreon.com/lekoarts) or [GitHub Sponsor](https://github.com/sponsors/LekoArts)!
+## Show your support
+
+Give a ⭐️ if this project helped you!
