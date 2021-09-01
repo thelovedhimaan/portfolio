@@ -115,6 +115,7 @@ const Navigation = () => {
                       </span>
                     </NavLink>
                   </NavItem>
+                 
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
@@ -124,6 +125,17 @@ const Navigation = () => {
                     <i className="fa fa-linkedin" />
                       <span className="nav-link-inner--text d-lg-none ml-2">
                         Linkedin
+                      </span>
+                    </NavLink>
+                  </NavItem> <NavItem>
+                    <NavLink
+                      className="nav-link-icon"
+                      href={socialLinks.email}
+                      target="_blank"
+                    >
+                  <i class="fa fa-envelope-open"></i>
+                      <span className="nav-link-inner--text d-lg-none ml-2">
+                        Email
                       </span>
                     </NavLink>
                   </NavItem>

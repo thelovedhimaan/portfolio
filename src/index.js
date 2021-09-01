@@ -23,7 +23,6 @@ ReactDOM.render(
       <Experience />
       {/* <Proficiency /> */}
       <Education />
-
       {/* <Feedbacks /> */}
       <Projects />
       <GithubProfile />

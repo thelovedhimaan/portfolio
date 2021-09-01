@@ -14,10 +14,12 @@ export const greetings = {
 };
 
 export const openSource = {
-   githubUserName: '1Love100',
+   githubUserName: 'thelovedhimaan',
 };
 
-export const contact = {};
+export const contact = {
+   email: '9541122850',
+};
 
 export const socialLinks = {
    facebook: 'https://www.facebook.com/thelovedhimaan',
@@ -25,6 +27,7 @@ export const socialLinks = {
    twitter: 'https://twitter.com/thelovedhimaan',
    github: 'https://github.com/thelovedhimaan',
    linkedin: 'https://www.linkedin.com/in/thelovedhimaan/',
+   email: 'mailto:thelovedhimaan@gmail.com',
 };
 
 export const skillsSection = {
@@ -32,83 +35,117 @@ export const skillsSection = {
    subTitle: 'CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK',
    skills: [
       emoji(
-         '⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications'
+         '⚡ Develop highly interactive Front end / User Interfaces for your web applications'
       ),
       emoji('⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks'),
       emoji(
-         '⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean'
+         '⚡ Integration of third party services such as Heroku/ AWS / Netlify'
       ),
    ],
 
    softwareSkills: [
       {
-         skillName: 'html-5',
+         skillName: 'Html-5',
          fontAwesomeClassname: 'vscode-icons:file-type-html',
       },
       {
-         skillName: 'css3',
+         skillName: 'Css3',
          fontAwesomeClassname: 'vscode-icons:file-type-css',
       },
-      {
-         skillName: 'sass',
-         fontAwesomeClassname: 'logos:sass',
-      },
+      // {
+      //    skillName: 'sass',
+      //    fontAwesomeClassname: 'logos:sass',
+      // },
       {
          skillName: 'JavaScript',
          fontAwesomeClassname: 'logos:javascript',
       },
+      // {
+      //    skillName: 'TypeScript',
+      //    fontAwesomeClassname: 'logos:typescript-icon',
+      // },
       {
-         skillName: 'TypeScript',
-         fontAwesomeClassname: 'logos:typescript-icon',
-      },
-      {
-         skillName: 'reactjs',
+         skillName: 'Reactjs',
          fontAwesomeClassname: 'vscode-icons:file-type-reactjs',
       },
       {
-         skillName: 'nodejs',
-         fontAwesomeClassname: 'logos:nodejs-icon',
+         skillName: 'Redux',
+         fontAwesomeClassname: 'logos:redux',
       },
       {
-         skillName: 'flutter',
-         fontAwesomeClassname: 'logos:flutter',
+         skillName: 'Nodejs',
+         fontAwesomeClassname: 'logos:nodejs',
       },
       {
-         skillName: 'swift',
-         fontAwesomeClassname: 'vscode-icons:file-type-swift',
+         skillName: 'Express',
+         fontAwesomeClassname: 'logos:express',
       },
+      {
+         skillName: 'Gatsbyjs',
+         fontAwesomeClassname: 'logos:gatsby',
+      },
+      // {
+      //    skillName: 'Express',
+      //    fontAwesomeClassname: 'vscode-icons:file-type-expressjs',
+      // },
+      {
+         skillName: 'Figma',
+         fontAwesomeClassname: 'logos:figma',
+      },
+      {
+         skillName: 'Bootstrap',
+         fontAwesomeClassname: 'logos:bootstrap',
+      },
+      {
+         skillName: 'MaterialUI',
+         fontAwesomeClassname: 'logos:material-ui',
+      },
+      {
+         skillName: 'MongoDB',
+         fontAwesomeClassname: 'logos:mongodb',
+      },
+      {
+         skillName: 'Sql-database',
+         fontAwesomeClassname: 'logos:mysql',
+      },
+
+      // {
+      //    skillName: 'swift',
+      //    fontAwesomeClassname: 'vscode-icons:file-type-swift',
+      // },
       {
          skillName: 'npm',
-         fontAwesomeClassname: 'vscode-icons:file-type-npm',
+         fontAwesomeClassname: 'logos:npm',
       },
+
+      // {
+      //    skillName: 'AWS',
+      //    fontAwesomeClassname: 'logos:aws',
+      // },
       {
-         skillName: 'sql-database',
-         fontAwesomeClassname: 'vscode-icons:file-type-sql',
-      },
-      {
-         skillName: 'mongoDB',
-         fontAwesomeClassname: 'vscode-icons:file-type-mongo',
-      },
-      {
-         skillName: 'aws',
+         skillName: 'Netlify',
          fontAwesomeClassname: 'logos:aws',
       },
       {
-         skillName: 'firebase',
-         fontAwesomeClassname: 'logos:firebase',
+         skillName: 'Heroku',
+         fontAwesomeClassname: 'logos:heroku',
+      },
+      // {
+      //    skillName: 'python',
+      //    fontAwesomeClassname: 'logos:python',
+      // },
+      {
+         skillName: 'Git',
+         fontAwesomeClassname: 'logos:git',
       },
       {
-         skillName: 'python',
-         fontAwesomeClassname: 'logos:python',
+         skillName: 'GoogleCloud',
+         fontAwesomeClassname: 'logos:google-cloud',
       },
-      {
-         skillName: 'git',
-         fontAwesomeClassname: 'logos:git-icon',
-      },
-      {
-         skillName: 'docker',
-         fontAwesomeClassname: 'logos:docker-icon',
-      },
+      // {
+      //    skillName: 'docker',
+      //    fontAwesomeClassname: 'logos:docker-icon',
+      // },
    ],
 };
 
@@ -123,86 +160,103 @@ export const SkillBars = [
    },
    {
       Stack: 'Programming',
-      progressPercentage: '60',
+      progressPercentage: '70',
    },
 ];
 
 export const educationInfo = [
    {
-      schoolName: 'Harvard University',
-      subHeader: 'Master of Science in Computer Science',
-      duration: 'September 2017 - April 2019',
-      desc: 'Participated in the research of XXX and published 3 papers.',
-      descBullets: [
-         'Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit',
-         'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      ],
+      schoolName: 'SD College',
+      subHeader: 'BSc (Hons) Information Technology',
+      duration: '2016 –2020',
+      desc: 'National Cadets Cops (2016 -2017)',
+      // descBullets: [
+      //    'Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit',
+      //    'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+      // ],
    },
    {
-      schoolName: 'Harvard',
-      subHeader: 'Master of Science in Computer Science',
-      duration: 'September 2017 - April 2019',
-      desc: 'Participated in the research of XXX and published 3 papers.',
-      descBullets: [
-         'Lorem ipsum dolor sit amet, consectetfgur adipiscing elit',
-         'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      ],
+      schoolName: 'Bhartiya Public School',
+      subHeader: 'Class 12',
+      duration: 'April 2015 - May 2016)',
+      desc: 'Percentage: 77.8%',
+      // descBullets: [
+      //    'Lorem ipsum dolor sit amet, consectetfgur adipiscing elit',
+      //    'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+      // ],
    },
    {
-      schoolName: 'Stanford University',
-      subHeader: 'Bachelor of Science in Computer Science',
-      duration: 'September 2013 - April 2017',
-      desc: 'Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...',
-      descBullets: [
-         'Lorem ipsum dolorfdg sit amet, consectetur adipiscing elit',
-      ],
+      schoolName: 'D.C. Model Senior Secondary School',
+      subHeader: 'Class 10 Apr (2013 - May 2014)',
+      duration: 'April 2013 - May 2014',
+      desc: 'CGPA: 8.6',
+      // descBullets: [
+      //    'Lorem ipsum dolorfdg sit amet, consectetur adipiscing elit',
+      // ],
    },
 ];
 
 export const experience = [
    {
-      role: 'Software Engineer',
-      company: 'Google',
-      companylogo: googlelogo,
-      date: 'June 2018 – Present',
-      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      descBullets: [
-         'Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit',
-         'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      ],
+      role: 'Frontend Developer',
+      company: 'Sauda Technologies',
+      // companylogo: googlelogo,
+      date: 'March 2021 - August 2021',
+      desc: 'Created and managed Web application, dashboard and company website',
+      descBullets: ['Designed layouts.', 'Implemented them in Frontend'],
    },
    {
-      role: 'Front-End Developer',
-      company: 'Github',
-      companylogo: github,
-      date: 'May 2017 – May 2018',
-      desc: 'Lorem ipsum dolor sit amet, consefdctetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      role: 'Frontend Developer Intern',
+      company: 'Sauda Technologies',
+      // companylogo: googlelogo,
+      date: 'December 2020 - February 2021',
+      desc: 'Created and managed Web application, dashboard and company website',
+      descBullets: ['Designed layouts.', 'Implemented them in Frontend'],
    },
-   {
-      role: 'Software Engineer Intern',
-      company: 'Airbnb',
-      companylogo: airbnb,
-      date: 'Jan 2015 – Sep 2015',
-      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-   },
+   // {
+   //    role: 'Software Engineer Intern',
+   //    company: 'Airbnb',
+   //    companylogo: airbnb,
+   //    date: 'Jan 2015 – Sep 2015',
+   //    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+   // },
 ];
 
 export const projects = [
    {
-      name: 'lorem ipsum',
-      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-      link: 'https://example.com',
+      name: 'Woodwork’s',
+      desc: 'React, Express, Node.js, MongoDB      Website for purchasing furniture.      All furniture is divided into categories for better experience. Currently it is in progress.',
+      github: 'https://github.com/thelovedhimaan/wood-works',
+      // link: 'https://example.com',
    },
    {
-      name: 'lorem ipsum',
-      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-      github: 'https://github.com/1Love100',
+      name: 'Dynamic Chemicals',
+      desc: 'Gatsby.js, React      It is a Site that allows users to create and find camping places, it allows users to comment on the other campgrounds made by other users.      Also, user needs to register before creating or commenting.',
+      // github: 'https://github.com/1Love100',
+      link: 'https://www.dynamicchemicals.co.in/',
    },
    {
-      name: 'lorem ipsum',
-      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-      github: 'https://github.com/1Love100',
-      link: 'https://example.com',
+      name: 'React Colors',
+      desc: 'React without using hooks      A complete React based application that allows user to copy different shades of colors from different palettes.      User can create own palette of colors through which anyone can copy colors in future.',
+      github: 'https://github.com/thelovedhimaan/ReactColors',
+      link: 'https://colorsfun.herokuapp.com/',
+   },
+   {
+      name: 'Daily Wallet',
+      desc: 'React, Material UI, Bootstrap      Book Reader, calculator, weather, to-do list & top news on single site.',
+      github: 'https://github.com/thelovedhimaan/DailyWallet',
+   },
+   // {
+   //    name: 'YouCamp',
+   //    desc: 'Express (Rest API), Node.js, Passport.js, Bootstrap, MongoDB      It is a Site that allows users to create and find camping places, it allows users to comment on the other campgrounds made by other users.      Also, user needs to register before creating or commenting.',
+   //    github: 'https://github.com/1Love100',
+   //    // link: 'https://example.com',
+   // },
+   {
+      name: 'Chemistry Classes',
+      desc: 'Express (Rest API), Node.js, Passport.js, Bootstrap,      This website provides chemistry lectures to students from classes      9th to 12th.It can be updated using form for adding new lectures.',
+      github: 'https://github.com/thelovedhimaan/chemistry-classes',
+      link: 'https://shrouded-brushlands-75911.herokuapp.com/',
    },
 ];
 

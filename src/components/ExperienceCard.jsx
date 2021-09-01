@@ -15,7 +15,7 @@ import ColorThief from "colorthief";
 import { Fade } from 'react-reveal';
 
 const ExperienceCard = ({data}) => {
-    const [colorArrays, setColorArrays] = useState([]);
+    const [colorArrays, setColorArrays] = useState(['blue', 'red']);
     const imgRef = createRef();
 
     function getColorArrays() {
@@ -28,10 +28,10 @@ const ExperienceCard = ({data}) => {
     }
 
     return ( 
-        <Col lg="4">
+        <Col lg="6">
         <Fade left duration={1000} distance="40px">
             <Card style={{flex: 1}} className="shadow-lg--hover shadow border-0 text-center rounded">
-                <CardHeader style={{background: rgb(colorArrays)}} >
+                <CardHeader style={{background: '#14123B'}} >
                     <h5 className="text-white">{data.company}</h5>
                 </CardHeader>
                 <CardBody className="py-5">

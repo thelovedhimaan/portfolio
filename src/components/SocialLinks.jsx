@@ -57,6 +57,18 @@ const SocialLinks = () => {
                     <i className="fa fa-linkedin" />
                   </span>
                 </Button>
+               <Button
+                        className="btn-icon-only rounded-circle ml-1"
+                        color="white"
+                      href={socialLinks.email}
+                      target="_blank"
+                    >
+                         <span className="btn-inner--icon">
+                         <i class="fa fa-envelope-open"></i>
+                  </span>
+            
+                  
+                    </Button>
         </div>
      );
 }

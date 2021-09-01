@@ -18125,11 +18125,13 @@ textarea[resize='horizontal'] {
    position: relative;
    padding-top: 4rem;
    padding-bottom: 4rem;
+   width: 100%;
 }
 
 .section-xl {
    padding-top: 8rem;
    padding-bottom: 8rem;
+  
 }
 
 .section-lg {
@@ -18781,7 +18783,7 @@ p {
 }
 
 .lead {
-   font-size: 1.25rem;
+   font-size: 1.15rem;
    font-weight: 500;
    color: black;
    line-height: 1.7;
@@ -18790,7 +18792,7 @@ p {
 }
 
 .lead2 {
-	font-size: 1rem;
+	font-size: 14px;
 	font-weight: 500;
 	color: black;
  }
