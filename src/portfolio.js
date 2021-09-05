@@ -10,7 +10,7 @@ export const greetings = {
    description:
       'A passionate Full Stack Web Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / MongoDB / Redux / Figma and some other cool libraries and frameworks.',
    resumeLink:
-      'https://docs.google.com/document/d/1_HP-JHwAzSlVcqG2I10_AfpktqmHeLHjd21TCSXga4w/edit?usp=sharing',
+      'https://docs.google.com/document/d/194EvN0SL-W0DCjDx-RLZOusvMnFON0dFCyr4M_8ueSo/edit?usp=sharing',
 };
 
 export const openSource = {
