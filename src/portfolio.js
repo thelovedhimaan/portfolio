@@ -201,7 +201,7 @@ export const experience = [
       role: 'Frontend Developer',
       company: 'Sauda Technologies',
       // companylogo: googlelogo,
-      date: 'December 2020 - August 2021',
+      date: 'December 2020 - July 2021',
       desc: 'Worked on many products on various parts from designing, development, testing to deploying the changes to production.',
       descBullets: [
          'With a team of mere 4-5 developers, we were able to develop, maintain and scale multiple products.',
