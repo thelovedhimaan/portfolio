@@ -205,7 +205,7 @@ export const experience = [
       desc: 'Worked on many products on various parts from designing, development, testing to deploying the changes to production.',
       descBullets: [
          'With a team of mere 4-5 developers, we were able to develop, maintain and scale multiple products.',
-         'Worked on building  dashboard and company website from scratch.',
+         'Worked on building dashboard and company website from scratch.',
          'Developed modules by consuming the REST API.',
          'Designed clean code for project maintainability and testability.',
          'Securing the application using session based logs.',
@@ -225,19 +225,19 @@ export const experience = [
 export const projects = [
    {
       name: 'Woodwork’s',
-      desc: 'React, Express, Node.js, MongoDB      Website for purchasing furniture.      All furniture is divided into categories for better experience. Currently it is in progress.',
+      desc: 'MERN Stack Web Application for purchasing furniture. All furniture is divided into categories for better experience. Currently it is in progress.',
       github: 'https://github.com/thelovedhimaan/wood-works',
       // link: 'https://example.com',
    },
    {
       name: 'Dynamic Chemicals',
-      desc: 'Gatsby.js, React      It is a Site that allows users to create and find camping places, it allows users to comment on the other campgrounds made by other users.      Also, user needs to register before creating or commenting.',
+      desc: 'Landing page of one of my client built using Gatsby.js and React',
       // github: 'https://github.com/1Love100',
       link: 'https://www.dynamicchemicals.co.in/',
    },
    {
       name: 'React Colors',
-      desc: 'React without using hooks      A complete React based application that allows user to copy different shades of colors from different palettes.      User can create own palette of colors through which anyone can copy colors in future.',
+      desc: 'React Application that allows user to copy different shades of colors from different palettes. User can create own palette of colors through which anyone can copy colors in future.',
       github: 'https://github.com/thelovedhimaan/ReactColors',
       link: 'https://colorsfun.herokuapp.com/',
    },
@@ -254,7 +254,7 @@ export const projects = [
    // },
    {
       name: 'Chemistry Classes',
-      desc: 'Express (Rest API), Node.js, Passport.js, Bootstrap,      This website provides chemistry lectures to students from classes      9th to 12th.It can be updated using form for adding new lectures.',
+      desc: 'Express (Rest API), Node.js, Passport.js, Bootstrap,      Web Application that provides chemistry lectures to students from classes 9th to 12th. It can be updated using form for adding new lectures.',
       github: 'https://github.com/thelovedhimaan/chemistry-classes',
       link: 'https://shrouded-brushlands-75911.herokuapp.com/',
    },
