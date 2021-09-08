@@ -241,11 +241,11 @@ export const projects = [
       github: 'https://github.com/thelovedhimaan/ReactColors',
       link: 'https://colorsfun.herokuapp.com/',
    },
-   {
-      name: 'Daily Wallet',
-      desc: 'React, Material UI, Bootstrap      Book Reader, calculator, weather, to-do list & top news on single site.',
-      github: 'https://github.com/thelovedhimaan/DailyWallet',
-   },
+   // {
+   //    name: 'Daily Wallet',
+   //    desc: 'React, Material UI, Bootstrap      Book Reader, calculator, weather, to-do list & top news on single site.',
+   //    github: 'https://github.com/thelovedhimaan/DailyWallet',
+   // },
    // {
    //    name: 'YouCamp',
    //    desc: 'Express (Rest API), Node.js, Passport.js, Bootstrap, MongoDB      It is a Site that allows users to create and find camping places, it allows users to comment on the other campgrounds made by other users.      Also, user needs to register before creating or commenting.',
