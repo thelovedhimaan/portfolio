@@ -1,6 +1,9 @@
 {
   "name": "@once-ui-system/magic-portfolio",
   "version": "2.3.0",
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
     "dev": "next dev",
     "export": "next export",
@@ -36,3 +39,4 @@
     "tzdata": "^1.0.44"
   }
 }
+
