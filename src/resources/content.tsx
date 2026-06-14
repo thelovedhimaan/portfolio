@@ -2,20 +2,20 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Love",
+  lastName: "Dhimaan",
+  name: `Love Dhimaan`,
+  role: "Senior Frontend Engineer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "thelovedhimaan@gmail.com",
+  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: <>Updates on frontend engineering and web development</>,
 };
 
 const social: Social = [
@@ -25,26 +25,26 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/thelovedhimaan",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/thelovedhimaan",
     essential: true,
   },
   {
     name: "Instagram",
     icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
+    link: "https://www.instagram.com/thelovedhimaan",
     essential: false,
   },
   {
     name: "Threads",
     icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-    essential: true,
+    link: "https://www.threads.com/@thelovedhimaan",
+    essential: false,
   },
   {
     name: "Email",
@@ -60,23 +60,23 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Building scalable frontends that perform and scale</>,
   featured: {
-    display: true,
+    display: false,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">Featured</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work",
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+    I'm Love, a Senior Frontend Engineer based in Gurugram, India. I specialize in building <br /> scalable SaaS applications with React.js, Next.js, and TypeScript.
 </>
   ),
 };
@@ -102,52 +102,70 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Senior Frontend Engineer with 5+ years of experience designing and building scalable SaaS
+        applications using React.js, Next.js, and TypeScript. Proven expertise in frontend
+        architecture, performance optimization, enterprise application development, and leading
+        engineering initiatives in high-growth environments. Experienced in building large-scale
+        dashboards, establishing reusable UI systems, and integrating AI-powered capabilities.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Manufapp",
+        timeframe: "September 2021 – Present",
+        role: "Senior Frontend Engineer / Frontend Lead",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Led frontend architecture and technical direction for a 35-member Agile team including
+            18 engineers, defining scalable frontend standards and reusable component architecture.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Built high-performance dashboards handling 10K–50K+ records using virtualization and
+            optimized rendering strategies.
+          </>,
+          <>
+            Improved application load times by 30–45% using code splitting, lazy loading, API
+            optimization, and Next.js optimizations.
+          </>,
+          <>
+            Integrated AI-powered features and third-party AI APIs; implemented AI-assisted
+            development practices using GitHub Copilot and Cursor AI to boost team productivity.
+          </>,
+          <>
+            Architected enterprise-grade PDF generation and ZPL barcode printing systems with
+            direct printer integration.
+          </>,
+          <>
+            Developed onboarding automation tools reducing enterprise client onboarding time by
+            ~60%.
+          </>,
+          <>
+            Led migration from Material UI to Ant Design, improving UI consistency and reducing
+            UI-related issues across the platform.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Sauda Technologies",
+        timeframe: "December 2020 – July 2021",
+        role: "Frontend Engineer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Built scalable React-based frontend applications using reusable and maintainable UI
+            component systems.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Developed analytics dashboards that enabled stakeholders to monitor business metrics and
+            user behavior effectively.
+          </>,
+          <>
+            Optimized website performance, improving responsiveness and overall user experience
+            through architectural improvements.
           </>,
         ],
         images: [],
@@ -155,54 +173,51 @@ const about: About = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Kurukshetra University",
+        description: <>B.Sc. Information Technology, 2016 – 2020.</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "React.js & Next.js",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>
+            5+ years building production SaaS applications with React.js and Next.js, including
+            SSR, performance optimization, and large-scale dashboard architecture.
+          </>
         ),
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "React.js",
+            icon: "react",
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Next.js",
+            icon: "nextjs",
+          },
+          {
+            name: "TypeScript",
+            icon: "typescript",
           },
         ],
+        images: [],
       },
       {
-        title: "Next.js",
+        title: "Frontend Architecture",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>
+            Designing scalable UI systems, reusable component libraries, and frontend standards for
+            enterprise-grade applications. Experienced with Ant Design, Material UI, and Tailwind
+            CSS.
+          </>
         ),
         tags: [
           {
@@ -210,23 +225,11 @@ const about: About = {
             icon: "javascript",
           },
           {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
+            name: "Figma",
+            icon: "figma",
           },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
     ],
   },
@@ -235,7 +238,7 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Writing about frontend engineering and tech...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -245,8 +248,8 @@ const work: Work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
+  description: `Frontend engineering projects by ${person.name}`,
+  // Create new project pages by adding a new .mdx file to app/work/projects
   // All projects will be listed on the /home and /work routes
 };
 
