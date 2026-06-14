@@ -1,137 +1,105 @@
-import { notFound } from "next/navigation";
-import { getPosts } from "@/utils/utils";
 import {
   Meta,
   Schema,
-  AvatarGroup,
-  Button,
   Column,
-  Flex,
   Heading,
   Media,
   Text,
-  SmartLink,
-  Row,
-  Avatar,
-  Line,
 } from "@once-ui-system/core";
+
 import { baseURL, about, person, work } from "@/resources";
-import { formatDate } from "@/utils/formatDate";
-import { ScrollToHash, CustomMDX } from "@/components";
-import { Metadata } from "next";
-import { Projects } from "@/components/work/Projects";
 
-export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const posts = getPosts(["src", "app", "work", "projects"]);
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
-}
-
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ slug: string | string[] }>;
-}): Promise<Metadata> {
-  const routeParams = await params;
-  const slugPath = Array.isArray(routeParams.slug)
-    ? routeParams.slug.join("/")
-    : routeParams.slug || "";
-
-  const posts = getPosts(["src", "app", "work", "projects"]);
-  let post = posts.find((post) => post.slug === slugPath);
-
-  if (!post) return {};
-
+export async function generateMetadata() {
   return Meta.generate({
-    title: post.metadata.title,
-    description: post.metadata.summary,
-    baseURL: baseURL,
-    image: post.metadata.image || `/api/og/generate?title=${post.metadata.title}`,
-    path: `${work.path}/${post.slug}`,
+    title: "Engineering Beyond the Interface",
+    description:
+      "Thoughts on building scalable frontend systems, balancing business needs with technical excellence.",
+    baseURL,
+    path: `${work.path}/engineering-beyond-the-interface`,
+    image: "/images/projects/project-01/cover-01.jpg",
   });
 }
 
-export default async function Project({
-  params,
-}: {
-  params: Promise<{ slug: string | string[] }>;
-}) {
-  const routeParams = await params;
-  const slugPath = Array.isArray(routeParams.slug)
-    ? routeParams.slug.join("/")
-    : routeParams.slug || "";
-
-  let post = getPosts(["src", "app", "work", "projects"]).find((post) => post.slug === slugPath);
-
-  if (!post) {
-    notFound();
-  }
-
-  const avatars =
-    post.metadata.team?.map((person) => ({
-      src: person.avatar,
-    })) || [];
-
+export default function WorkPage() {
   return (
     <Column as="section" maxWidth="m" horizontal="center" gap="l">
+
+      {/* SEO */}
       <Schema
         as="blogPosting"
         baseURL={baseURL}
-        path={`${work.path}/${post.slug}`}
-        title={post.metadata.title}
-        description={post.metadata.summary}
-        datePublished={post.metadata.publishedAt}
-        dateModified={post.metadata.publishedAt}
-        image={
-          post.metadata.image || `/api/og/generate?title=${encodeURIComponent(post.metadata.title)}`
-        }
+        path={`${work.path}/engineering-beyond-the-interface`}
+        title="Engineering Beyond the Interface"
+        description="Thoughts on building scalable frontend systems, balancing business needs with technical excellence."
+        datePublished="2026-06-14"
+        dateModified="2026-06-14"
+        image="/images/projects/project-01/cover-01.jpg"
         author={{
           name: person.name,
           url: `${baseURL}${about.path}`,
           image: `${baseURL}${person.avatar}`,
         }}
       />
-      <Column maxWidth="s" gap="16" horizontal="center" align="center">
-        <SmartLink href="/work">
-          <Text variant="label-strong-m">Projects</Text>
-        </SmartLink>
-        <Text variant="body-default-xs" onBackground="neutral-weak" marginBottom="12">
-          {post.metadata.publishedAt && formatDate(post.metadata.publishedAt)}
-        </Text>
-        <Heading variant="display-strong-m">{post.metadata.title}</Heading>
-      </Column>
-      <Row marginBottom="32" horizontal="center">
-        <Row gap="16" vertical="center">
-          {post.metadata.team && <AvatarGroup reverse avatars={avatars} size="s" />}
-          <Text variant="label-default-m" onBackground="brand-weak">
-            {post.metadata.team?.map((member, idx) => (
-              <span key={idx}>
-                {idx > 0 && (
-                  <Text as="span" onBackground="neutral-weak">
-                    ,{" "}
-                  </Text>
-                )}
-                <SmartLink href={member.linkedIn}>{member.name}</SmartLink>
-              </span>
-            ))}
-          </Text>
-        </Row>
-      </Row>
-      {post.metadata.images.length > 0 && (
-        <Media priority aspectRatio="16 / 9" radius="m" alt="image" src={post.metadata.images[0]} />
-      )}
-      <Column style={{ margin: "auto" }} as="article" maxWidth="xs">
-        <CustomMDX source={post.content} />
-      </Column>
-      <Column fillWidth gap="40" horizontal="center" marginTop="40">
-        <Line maxWidth="40" />
-        <Heading as="h2" variant="heading-strong-xl" marginBottom="24">
-          Related projects
+
+      {/* TITLE */}
+      <Column maxWidth="s" gap="m" horizontal="center" align="center">
+        <Heading variant="display-strong-m">
+          Engineering Beyond the Interface
         </Heading>
-        <Projects exclude={[post.slug]} range={[2]} />
       </Column>
-      <ScrollToHash />
+
+      {/* HERO IMAGE */}
+      <Media
+        priority
+        aspectRatio="16 / 9"
+        radius="m"
+        alt="project cover"
+        src="/images/projects/project-01/cover-01.jpg"
+      />
+
+      {/* CONTENT (YOUR MDX CONVERTED TO JSX) */}
+      <Column as="article" maxWidth="xs" gap="l">
+
+        <Heading variant="heading-strong-l">Overview</Heading>
+        <Text onBackground="neutral-weak">
+          Over the years, I've realized that frontend engineering is about much more than building interfaces.
+          It's about understanding problems deeply, making thoughtful trade-offs, and creating experiences that
+          feel effortless for users while remaining sustainable for teams.
+        </Text>
+
+        <Text onBackground="neutral-weak">
+          Working in fast-paced startup environments has taught me that the best solutions are often the simplest ones.
+          My focus has always been on building systems that stand the test of time.
+        </Text>
+
+        <Heading variant="heading-strong-l">Key Principles</Heading>
+        <Text onBackground="neutral-weak">
+          • Build for People — Every technical decision affects users and teams.{"\n"}
+          • Think Long-Term — Sustainable architecture creates lasting impact.{"\n"}
+          • Performance is a Feature — Speed improves trust and UX.{"\n"}
+          • Consistency Enables Scale — Reusable patterns help teams move fast.{"\n"}
+          • Stay Curious — Continuous learning drives innovation.
+        </Text>
+
+        <Heading variant="heading-strong-l">Technologies and Interests</Heading>
+        <Text onBackground="neutral-weak">
+          Frontend Engineering, System Design, Performance Optimization, Developer Experience, AI Integration.
+        </Text>
+
+        <Heading variant="heading-strong-l">Challenges and Learnings</Heading>
+        <Text onBackground="neutral-weak">
+          Engineering is rarely about perfect solutions. It is about balancing speed, scalability, and business constraints
+          while making informed decisions.
+        </Text>
+
+        <Heading variant="heading-strong-l">Outcome</Heading>
+        <Text onBackground="neutral-weak">
+          I strive to build reliable, intuitive systems with long-term impact. Great engineering is defined by clarity,
+          impact, and meaningful problem solving.
+        </Text>
+
+      </Column>
+
     </Column>
   );
 }

@@ -103,7 +103,7 @@ const about: About = {
     description: (
       <>
         Senior Frontend Engineer with 5+ years of experience designing and building scalable SaaS
-        applications using React.js, Next.js, and TypeScript. Proven expertise in frontend
+        applications using React.js, Next.js, and Javascript. Proven expertise in frontend
         architecture, performance optimization, enterprise application development, and leading
         engineering initiatives in high-growth environments. Experienced in building large-scale
         dashboards, establishing reusable UI systems, and integrating AI-powered capabilities.
@@ -183,56 +183,112 @@ const about: About = {
     ],
   },
   technical: {
-    display: true,
-    title: "Technical skills",
-    skills: [
-      {
-        title: "React.js & Next.js",
-        description: (
-          <>
-            5+ years building production SaaS applications with React.js and Next.js, including
-            SSR, performance optimization, and large-scale dashboard architecture.
-          </>
-        ),
-        tags: [
-          {
-            name: "React.js",
-            icon: "react",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "TypeScript",
-            icon: "typescript",
-          },
-        ],
-        images: [],
-      },
-      {
-        title: "Frontend Architecture",
-        description: (
-          <>
-            Designing scalable UI systems, reusable component libraries, and frontend standards for
-            enterprise-grade applications. Experienced with Ant Design, Material UI, and Tailwind
-            CSS.
-          </>
-        ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        images: [],
-      },
-    ],
-  },
+  display: true,
+  title: "Technical Skills",
+  skills: [
+    {
+      title: "Frontend Development",
+      description: (
+        <>
+          Building modern, high-performance web applications using React.js, Next.js, TypeScript,
+          JavaScript, HTML5, and CSS3 with a focus on scalable and maintainable UI development.
+        </>
+      ),
+      tags: [
+        { name: "React.js", icon: "react" },
+        { name: "Next.js", icon: "nextjs" },
+        { name: "TypeScript", icon: "typescript" },
+        { name: "JavaScript", icon: "javascript" },
+        { name: "HTML5", icon: "html5" },
+        { name: "CSS3", icon: "css3" },
+      ],
+      images: [],
+    },
+    {
+      title: "Architecture & Performance Engineering",
+      description: (
+        <>
+          Designing scalable frontend architectures with strong focus on performance optimization,
+          virtualization, lazy loading, code splitting, and efficient rendering strategies for large-scale applications.
+        </>
+      ),
+      tags: [
+        { name: "Frontend Architecture", icon: "architecture" },
+        { name: "Performance Optimization", icon: "performance" },
+        { name: "Lazy Loading", icon: "lazy" },
+        { name: "Code Splitting", icon: "code" },
+      ],
+      images: [],
+    },
+    {
+      title: "State Management & API Integration",
+      description: (
+        <>
+          Managing complex application state and integrating REST APIs with optimized data flow.
+          Experience with React Query and AI API integrations for intelligent and dynamic applications.
+        </>
+      ),
+      tags: [
+        { name: "REST APIs", icon: "api" },
+        { name: "React Query", icon: "reactquery" },
+        { name: "State Management", icon: "state" },
+        { name: "AI APIs", icon: "ai" },
+      ],
+      images: [],
+    },
+    {
+      title: "Backend & Databases",
+      description: (
+        <>
+          Developing backend services using Node.js and Express.js with experience in relational
+          and NoSQL databases including PostgreSQL and MongoDB for scalable applications.
+        </>
+      ),
+      tags: [
+        { name: "Node.js", icon: "nodejs" },
+        { name: "Express.js", icon: "express" },
+        { name: "PostgreSQL", icon: "postgresql" },
+        { name: "MongoDB", icon: "mongodb" },
+      ],
+      images: [],
+    },
+    {
+      title: "UI Libraries & Design Systems",
+      description: (
+        <>
+          Working with modern UI frameworks and component libraries to build consistent,
+          responsive, and accessible user interfaces.
+        </>
+      ),
+      tags: [
+        { name: "Ant Design", icon: "antd" },
+        { name: "Material UI", icon: "mui" },
+        { name: "Bootstrap", icon: "bootstrap" },
+        { name: "Tailwind CSS", icon: "tailwind" },
+      ],
+      images: [],
+    },
+    {
+      title: "Tools & AI-Assisted Development",
+      description: (
+        <>
+          Using modern development tools and AI-powered workflows to accelerate development,
+          improve code quality, and enhance productivity in real-world projects.
+        </>
+      ),
+      tags: [
+        { name: "Git", icon: "git" },
+        { name: "GitHub", icon: "github" },
+        { name: "Figma", icon: "figma" },
+        { name: "Google Analytics", icon: "analytics" },
+        { name: "GTM", icon: "gtm" },
+        { name: "Cursor AI", icon: "cursor" },
+        { name: "GitHub Copilot", icon: "copilot" },
+      ],
+      images: [],
+    },
+  ],
+},
 };
 
 const blog: Blog = {
@@ -304,4 +360,4 @@ const gallery: Gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about,  work, gallery };
