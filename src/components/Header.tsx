@@ -17,25 +17,6 @@ type TimeDisplayProps = {
 const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = "en-GB" }) => {
   const [currentTime, setCurrentTime] = useState("");
 
-  useEffect(() => {
-    const updateTime = () => {
-      const now = new Date();
-      const options: Intl.DateTimeFormatOptions = {
-        timeZone,
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
-        hour12: false,
-      };
-      const timeString = new Intl.DateTimeFormat(locale, options).format(now);
-      setCurrentTime(timeString);
-    };
-
-    updateTime();
-    const intervalId = setInterval(updateTime, 1000);
-
-    return () => clearInterval(intervalId);
-  }, [timeZone, locale]);
 
   return <>{currentTime}</>;
 };
@@ -124,25 +105,6 @@ export const Header = () => {
                       prefixIcon="grid"
                       href="/work"
                       selected={pathname.startsWith("/work")}
-                    />
-                  </Row>
-                </>
-              )}
-              {routes["/gallery"] && (
-                <>
-                  <Row s={{ hide: true }}>
-                    <ToggleButton
-                      prefixIcon="gallery"
-                      href="/gallery"
-                      label={gallery.label}
-                      selected={pathname.startsWith("/gallery")}
-                    />
-                  </Row>
-                  <Row hide s={{ hide: false }}>
-                    <ToggleButton
-                      prefixIcon="gallery"
-                      href="/gallery"
-                      selected={pathname.startsWith("/gallery")}
                     />
                   </Row>
                 </>
