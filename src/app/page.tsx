@@ -25,8 +25,8 @@ export async function generateMetadata() {
 
 export default function Home() {
   return (
-    <Column maxWidth="m" gap="l" paddingY="10" horizontal="center">
-
+    <Column maxWidth="m" gap="m" horizontal="center" paddingY="xs">
+      {/* SEO */}
       <Schema
         as="webPage"
         baseURL={baseURL}
@@ -42,34 +42,34 @@ export default function Home() {
       />
 
       {/* HERO */}
-      <RevealFx translateY="10" delay={0.1}>
+      <RevealFx translateY={10} delay={0.1}>
         <Column fillWidth horizontal="center" gap="m" align="center">
-
-          {/* Badges */}
-          <Row gap="8" wrap horizontal="center">
+          
+          {/* BADGES */}
+          <Row gap="xs" wrap horizontal="center">
             <Badge>Frontend Engineer</Badge>
             <Badge>React / Next.js</Badge>
             <Badge>AI + SaaS</Badge>
           </Row>
 
-          {/* Headline */}
+          {/* HEADLINE */}
           <Heading
-            wrap="balance"
             variant="display-strong-l"
+            wrap="balance"
             style={{
               textAlign: "center",
               letterSpacing: "-0.03em",
               lineHeight: 1.05,
-              maxWidth: "880px",
+              maxWidth: "900px",
             }}
           >
             Building scalable frontend systems & AI-powered SaaS products
           </Heading>
 
-          {/* Subline */}
+          {/* SUBTEXT */}
           <Text
-            wrap="balance"
             variant="heading-default-xl"
+            wrap="balance"
             onBackground="neutral-weak"
             style={{
               textAlign: "center",
@@ -80,41 +80,51 @@ export default function Home() {
             focused on scalability, UX, and production-grade architecture.
           </Text>
 
-          {/* Proof row (compact) */}
-          <Row gap="12" wrap horizontal="center">
+          {/* PROOF ROW */}
+          <Row gap="m" wrap horizontal="center">
             <Text onBackground="neutral-weak">⚡ Performance UI</Text>
             <Text onBackground="neutral-weak">🧠 AI integrations</Text>
             <Text onBackground="neutral-weak">🚀 SaaS systems</Text>
           </Row>
 
           {/* CTA */}
-          <Row gap="12" paddingTop="6" horizontal="center">
-              
-          <Button   href={about.path}
-           src={person.avatar}
-              variant="primary"
-              size="xl"
-              style={{
-                borderRadius: "999px",
-                padding: "12px 22px",
-              }}
-            >
-             <Row gap="8" vertical="center" paddingRight="4">
-                {about.avatar.display && (
-                  <Avatar
-                    marginRight="8"
-                    style={{ marginLeft: "-0.75rem" }}
-                    src={person.avatar}
-                    size="l"
-                  />
-                )}
-                {about.title}
-              </Row>
-            </Button>
+          <Row gap="s" wrap horizontal="center">
+           <Button
+  href={about.path}
+  variant="secondary"
+  size="l"
+  style={{
+    borderRadius: "999px",
+    background: "white",
+    color: "#111",
+    padding: "6px 16px 6px 0px",
+    border: "none",
+    fontWeight: 600,
+  }}
+>
+  <Row vertical="center" gap="8">
+    <Avatar
+      src={person.avatar}
+      size="l"
+      style={{
+        border: "2px solid white",
+      }}
+    />
+    <Text
+      style={{
+        fontWeight: 700,
+        fontSize: "1.1rem",
+      }}
+    >
+      About – Love Dhimaan
+    </Text>
+  </Row>
+</Button>
+
             <Button
               href="/work"
               variant="secondary"
-              size="xl"
+              size="l"
               arrowIcon
               style={{
                 borderRadius: "999px",
@@ -123,57 +133,44 @@ export default function Home() {
             >
               View Work
             </Button>
-
-           
-
           </Row>
-
         </Column>
       </RevealFx>
 
-      {/* WHAT I DO (tight section) */}
-      <RevealFx translateY="12" delay={0.2}>
-        <Column fillWidth gap="s" paddingTop="8">
+      {/* WHAT I DO */}
+      <RevealFx translateY={12} delay={0.2}>
+        <Column fillWidth gap="l">
+          <Heading variant="heading-strong-l">What I do</Heading>
 
-          <Heading variant="heading-strong-l">
-            What I do
-          </Heading>
-
-          <Row gap="12" wrap>
-
-            <Column gap="xs" style={{ flex: 1 }}>
+          <Row gap="m" wrap>
+            <Column gap="xs" style={{ flex: "1 1 250px" }}>
               <Badge>Frontend</Badge>
               <Text onBackground="neutral-weak">
                 Scalable React & Next.js apps with performance-first architecture.
               </Text>
             </Column>
 
-            <Column gap="xs" style={{ flex: 1 }}>
+            <Column gap="xs" style={{ flex: "1 1 250px" }}>
               <Badge>AI Integration</Badge>
               <Text onBackground="neutral-weak">
                 LLM APIs, automation, and AI-powered SaaS features.
               </Text>
             </Column>
 
-            <Column gap="xs" style={{ flex: 1 }}>
+            <Column gap="xs" style={{ flex: "1 1 250px" }}>
               <Badge>System Design</Badge>
               <Text onBackground="neutral-weak">
                 UI systems, state management, and scalable frontend architecture.
               </Text>
             </Column>
-
           </Row>
         </Column>
       </RevealFx>
 
       {/* FINAL CTA */}
-      <RevealFx translateY="10" delay={0.25}>
-        <Column fillWidth horizontal="center" gap="s" paddingY="10">
-
-          <Heading
-            variant="heading-strong-l"
-            style={{ textAlign: "center" }}
-          >
+      <RevealFx translateY={10} delay={0.25}>
+        <Column fillWidth horizontal="center" gap="l">
+          <Heading variant="heading-strong-l" style={{ textAlign: "center" }}>
             Let’s build something impactful
           </Heading>
 
@@ -187,7 +184,7 @@ export default function Home() {
           <Button
             href="mailto:your@email.com"
             variant="primary"
-            size="xl"
+            size="l"
             arrowIcon
             style={{
               borderRadius: "999px",
@@ -196,10 +193,8 @@ export default function Home() {
           >
             Contact
           </Button>
-
         </Column>
       </RevealFx>
-
     </Column>
   );
 }

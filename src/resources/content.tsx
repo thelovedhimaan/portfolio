@@ -293,11 +293,9 @@ const about: About = {
 
 const blog: Blog = {
   path: "/blog",
+  title: "Blog",
   label: "Blog",
-  title: "Writing about frontend engineering and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  description:"Blog"
 };
 
 const work: Work = {
@@ -360,4 +358,4 @@ const gallery: Gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about,  work, gallery };
+export { person, social, newsletter, home, about,blog,  work, gallery };
