@@ -1,118 +1,91 @@
-<h1 align="center">Welcome to developer-portfolio 👋</h1>
-<a href="https://github.com/thelovedhimaan/developer-portfolio/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/thelovedhimaan/developer-portfolio"></a><a href="https://github.com/thelovedhimaan/developer-portfolio/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/thelovedhimaan/developer-portfolio"></a><a href="https://github.com/thelovedhimaan/developer-portfolio/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/thelovedhimaan/developer-portfolio"></a> <a href="https://github.com/thelovedhimaan/developer-portfolio/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/thelovedhimaan/developer-portfolio"></a>
+# Magic Portfolio
 
-## Software Developer Portfolio Template built with react.js bootstrap that helps you showcase your work and skills as a software developer.
+Magic Portfolio is a simple, clean, beginner-friendly portfolio template. It supports an MDX-based content system for projects and blog posts, an about / CV page and a gallery.
 
-<p align="center">
-  <kbd>
-    <img src="https://github.com/thelovedhimaan/developer-portfolio/blob/master/picture.PNG"></img>
-  </kbd>
-</p>
+View the demo [here](https://demo.magic-portfolio.com).
 
-### To view a live example, **[click here](https://developer-portfolio.thelovedhimaan.vercel.app/)**.
+![Magic Portfolio](public/images/og/home.jpg)
 
-Just Edit `src/portfolio.js` to get your personal portfolio. Feel free to use it as-is or customize it as much as you want.
+## Getting started
 
-But if you want to **contribute** and make this much better for other developer have a look at [Issues](https://github.com/thelovedhimaan/developer-portfolio/issues).
-
-If you created something awesome and want to contribute then feel free to open an [pull request](https://github.com/thelovedhimaan/developer-portfolio/pulls).
-
-## Table of Contents
-
--  [Sections](#sections)
--  [Getting Started](#getting-started)
--  [How to Use](#how-to-use)
--  [Linking portfolio to Github](#linking-portfolio-to-github)
--  [Change and Customize](#change-and-customize-every-section-according-to-your-need)
--  [Technologies Used](#technologies-used)
--  [Illustrations](#illustrations)
--  [For the Future](#for-the-future)
--  [Contributors](#project-maintainers)
-
-## Sections
-
-✔️ Summary and About me\
-✔️ Skills\
-✔️ Education\
-✔️ Work Experience\
-✔️ Projects\
-✔️ Github Profile
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer.
-<br>
-**For Windows** Install Visual C++ Build Environment: [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools)
-
+**1. Clone the repository**
 ```
-node@v10.16.0 or higher
-npm@6.9.0 or higher
-git@2.17.1 or higher
+git clone https://github.com/once-ui-system/magic-portfolio.git
 ```
 
-## How To Use
-
-From your command line, clone and run developer-portolio:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/thelovedhimaan/developer-portfolio.git
-
-# Go into the repository
-$ cd developer-portfolio
-
-# Install dependencies
-$ yarn
-
-#Start's development server
-$ yarn start
+**2. Install dependencies**
+```
+npm install
 ```
 
-## Linking Portfolio to Github
-
-```javascript
-  //  portfolio.js
-  githubUserName: 'YOUR GITHUB USERNAME HERE',
+**3. Run dev server**
+```
+npm run dev
 ```
 
-#### Using Emojis
+**4. Edit config**
+```
+src/resources/once-ui.config.js
+```
 
-For adding emoji 😃 into the texts in `Portfolio.js`, use the `emoji()` function and pass the text you need as an argument. This would help in keeping emojis compatible across different browsers and platforms.
+**5. Edit content**
+```
+src/resources/content.js
+```
 
-## Technologies Used
+**6. Create blog posts / projects**
+```
+Add a new .mdx file to src/app/blog/posts or src/app/work/projects
+```
 
--  [React](https://reactjs.org/)
--  [axios](https://www.npmjs.com/package/axios)
--  [reactstrap](https://reactstrap.github.io/)
--  [react-reveal](https://www.react-reveal.com/)
--  [react-lottie](https://www.npmjs.com/package/react-lottie)
--  [react-easy-emoji](https://github.com/appfigures/react-easy-emoji)
--  [react-headroom](https://github.com/KyleAMathews/react-headroom)
--  [color-thief](https://github.com/lokesh/color-thief)
+Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
 
-## Illustrations
+## Documentation
 
--  [Lottie File Source](https://lottiefiles.com)
+Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfolio/quick-start)
 
-## For the Future
+## Features
 
-If you can help us with these. Please don't hesitate to open a [pull request](https://github.com/saadpasta/developerFolio/pulls).
+### Once UI
+- All tokens, components & features of [Once UI](https://once-ui.com)
 
--  Enable Dark Mode
+### SEO
+- Automatic open-graph and X image generation with next/og
+- Automatic schema and metadata generation based on the content file
 
--  Add More Sections
+### Design
+- Responsive layout optimized for all screen sizes
+- Timeless design without heavy animations and motion
+- Endless customization options through [data attributes](https://once-ui.com/docs/theming)
 
-## Author
+### Content
+- Render sections conditionally based on the content file
+- Enable or disable pages for blog, work, gallery and about / CV
+- Generate and display social links automatically
+- Set up password protection for URLs
 
-👤 **Love Dhimaan**
+### Localization
+- A localized, earlier version of Magic Portfolio is available with the next-intl library
+- To use localization, switch to the 'i18n' branch
 
--  Website: https://Love.netlify.app
--  Twitter: [@thelovedhimaan](https://twitter.com/thelovedhimaan)
--  Github: [@thelovedhimaan](https://github.com/thelovedhimaan)
--  LinkedIn: [@thelovedhimaan](https://linkedin.com/in/thelovedhimaan)
+## Creators
 
-## Show your support
+Lorant One: [Threads](https://www.threads.net/@lorant.one) / [LinkedIn](https://www.linkedin.com/in/lorant-one/)
 
-Give a ⭐️ if this project helped you!
+## Get involved
+
+- Join the Design Engineers Club on [Discord](https://discord.com/invite/5EyAQ4eNdS) and share your project with us!
+- Deployed your docs? Share it on the [Once UI Hub](https://once-ui.com/hub) too! We feature our favorite apps on our landing page.
+
+## License
+
+Distributed under the CC BY-NC 4.0 License.
+- Attribution is required.
+- Commercial usage is not allowed.
+- You can extend the license to [Dopler CC](https://dopler.app/license) by purchasing a [Once UI Pro](https://once-ui.com/pricing) license.
+
+See `LICENSE.txt` for more information.
+
+## Deploy with Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&project-name=portfolio&repository-name=portfolio&redirect-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&demo-title=Magic%20Portfolio&demo-description=Showcase%20your%20designers%20or%20developer%20portfolio&demo-url=https%3A%2F%2Fdemo.magic-portfolio.com&demo-image=%2F%2Fraw.githubusercontent.com%2Fonce-ui-system%2Fmagic-portfolio%2Fmain%2Fpublic%2Fimages%2Fog%2Fhome.jpg)
