@@ -43,7 +43,7 @@ export default function Home() {
 
       {/* HERO */}
       <RevealFx translateY={10} delay={0.1}>
-        <Column fillWidth horizontal="center" gap="m" align="center">
+        <Column fillWidth horizontal="center" gap="l" align="center">
           
           {/* BADGES */}
           <Row gap="xs" wrap horizontal="center">
@@ -61,6 +61,7 @@ export default function Home() {
               letterSpacing: "-0.03em",
               lineHeight: 1.05,
               maxWidth: "900px",
+              fontSize:'3rem',
             }}
           >
             Building scalable frontend systems & AI-powered SaaS products
@@ -74,9 +75,10 @@ export default function Home() {
             style={{
               textAlign: "center",
               maxWidth: "720px",
+              fontSize:'1.7rem',
             }}
           >
-            I work with React, Next.js and AI APIs to build high-performance web applications
+            I work with React, Next.js, JavaScript and AI APIs to build high-performance web applications
             focused on scalability, UX, and production-grade architecture.
           </Text>
 
@@ -139,27 +141,27 @@ export default function Home() {
 
       {/* WHAT I DO */}
       <RevealFx translateY={12} delay={0.2}>
-        <Column fillWidth gap="l">
-          <Heading variant="heading-strong-l">What I do</Heading>
+        <Column fillWidth gap="xl">
+          <Heading variant="heading-strong-l"></Heading>
 
-          <Row gap="m" wrap>
-            <Column gap="xs" style={{ flex: "1 1 250px" }}>
+          <Row gap="l" wrap>
+            <Column gap="xs" style={{ flex: "1 1 250px" ,display:"flex", flexDirection:"column",alignItems:'center'}}>
               <Badge>Frontend</Badge>
-              <Text onBackground="neutral-weak">
+              <Text onBackground="neutral-weak" style={{ textAlign: "center" }}>
                 Scalable React & Next.js apps with performance-first architecture.
               </Text>
             </Column>
 
-            <Column gap="xs" style={{ flex: "1 1 250px" }}>
+            <Column gap="xs" style={{ flex: "1 1 250px" ,display:"flex", flexDirection:"column",alignItems:'center'}}>
               <Badge>AI Integration</Badge>
-              <Text onBackground="neutral-weak">
+              <Text onBackground="neutral-weak" style={{ textAlign: "center" }}>
                 LLM APIs, automation, and AI-powered SaaS features.
               </Text>
             </Column>
 
-            <Column gap="xs" style={{ flex: "1 1 250px" }}>
+            <Column gap="xs" style={{ flex: "1 1 250px" ,display:"flex", flexDirection:"column",alignItems:'center'}}>
               <Badge>System Design</Badge>
-              <Text onBackground="neutral-weak">
+              <Text onBackground="neutral-weak" style={{ textAlign: "center" }}>
                 UI systems, state management, and scalable frontend architecture.
               </Text>
             </Column>
@@ -169,7 +171,7 @@ export default function Home() {
 
       {/* FINAL CTA */}
       <RevealFx translateY={10} delay={0.25}>
-        <Column fillWidth horizontal="center" gap="l">
+        <Column fillWidth horizontal="center" gap="m">
           <Heading variant="heading-strong-l" style={{ textAlign: "center" }}>
             Let’s build something impactful
           </Heading>

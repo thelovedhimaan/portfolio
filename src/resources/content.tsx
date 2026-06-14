@@ -133,7 +133,7 @@ const about: About = {
           </>,
           <>
             Integrated AI-powered features and third-party AI APIs; implemented AI-assisted
-            development practices using GitHub Copilot and Cursor AI to boost team productivity.
+            development practices using GitHub Copilot and Claude AI to boost team productivity.
           </>,
           <>
             Architected enterprise-grade PDF generation and ZPL barcode printing systems with
