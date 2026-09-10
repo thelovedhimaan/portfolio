@@ -5,8 +5,8 @@ import {
   Avatar,
   RevealFx,
   Column,
-  Badge,
   Row,
+  Badge,
   Schema,
   Meta,
 } from "@once-ui-system/core";
@@ -25,7 +25,7 @@ export async function generateMetadata() {
 
 export default function Home() {
   return (
-    <Column maxWidth="m" gap="m" horizontal="center" paddingY="xs">
+    <Column maxWidth="m" horizontal="center" paddingY="m">
       {/* SEO */}
       <Schema
         as="webPage"
@@ -41,160 +41,192 @@ export default function Home() {
         }}
       />
 
-      {/* HERO */}
+      {/* HERO SECTION */}
       <RevealFx translateY={10} delay={0.1}>
-        <Column fillWidth horizontal="center" gap="l" align="center">
-          
-          {/* BADGES */}
-          <Row gap="xs" wrap horizontal="center">
-            <Badge>Frontend Engineer</Badge>
-            <Badge>React / Next.js</Badge>
-            <Badge>AI + SaaS</Badge>
+        <Column
+          fillWidth
+          gap="16"
+          style={{
+            paddingTop: "0rem",
+            paddingBottom: "3rem",
+          }}
+        >
+          {/* Profile Lockup */}
+          <Row vertical="center" gap="16">
+            <Avatar size="l" src={person.avatar} />
+            <Column gap="4">
+              <Heading variant="heading-strong-s">{person.name}</Heading>
+              <Row vertical="center" gap="8">
+                <div
+                  style={{
+                    width: "8px",
+                    height: "8px",
+                    borderRadius: "50%",
+                    background: "var(--brand-solid-strong, #4ade80)",
+                  }}
+                />
+                <Text onBackground="neutral-weak" variant="body-default-xs">
+                  Open to Opportunities
+                </Text>
+              </Row>
+            </Column>
           </Row>
 
-          {/* HEADLINE */}
           <Heading
-            variant="display-strong-l"
+            variant="display-strong-xl"
             wrap="balance"
             style={{
-              textAlign: "center",
               letterSpacing: "-0.03em",
-              lineHeight: 1.05,
-              maxWidth: "900px",
-              fontSize:'3rem',
+              lineHeight: 1.1,
+              maxWidth: "1500px",
+              fontSize: "clamp(2.5rem, 5vw, 3.75rem)",
             }}
           >
-            Building scalable frontend systems & AI-powered SaaS products
+            Building scalable products, engineering teams and systems.
           </Heading>
 
-          {/* SUBTEXT */}
           <Text
-            variant="heading-default-xl"
+            variant="heading-default-l"
             wrap="balance"
             onBackground="neutral-weak"
             style={{
-              textAlign: "center",
-              maxWidth: "720px",
-              fontSize:'1.7rem',
+              maxWidth: "700px",
+              lineHeight: 1.5,
+              marginTop: "4px",
             }}
           >
-            I work with React, Next.js, JavaScript and AI APIs to build high-performance web applications
-            focused on scalability, UX, and production-grade architecture.
+            Engineering Manager and Frontend Architect with 5+ years of
+            experience building enterprise SaaS products, leading engineering
+            teams, and solving complex technical problems.
           </Text>
 
-          {/* PROOF ROW */}
-          <Row gap="m" wrap horizontal="center">
-            <Text onBackground="neutral-weak">⚡ Performance UI</Text>
-            <Text onBackground="neutral-weak">🧠 AI integrations</Text>
-            <Text onBackground="neutral-weak">🚀 SaaS systems</Text>
+          {/* MORE INFO */}
+          <Row gap="s" wrap style={{ marginTop: "8px", marginBottom: "8px" }}>
+            <Badge>⚡ Performance & Scale</Badge>
+            <Badge>👥 Engineering Leadership</Badge>
+            <Badge>🤖 AI-Assisted Development</Badge>
           </Row>
 
-          {/* CTA */}
-          <Row gap="s" wrap horizontal="center">
-           <Button
-  href={about.path}
-  variant="secondary"
-  size="l"
-  style={{
-    borderRadius: "999px",
-    background: "white",
-    color: "#111",
-    padding: "6px 16px 6px 0px",
-    border: "none",
-    fontWeight: 600,
-  }}
->
-  <Row vertical="center" gap="8">
-    <Avatar
-      src={person.avatar}
-      size="l"
-      style={{
-        border: "2px solid white",
-      }}
-    />
-    <Text
-      style={{
-        fontWeight: 700,
-        fontSize: "1.1rem",
-      }}
-    >
-      About – Love Dhimaan
-    </Text>
-  </Row>
-</Button>
-
+          <Row gap="s" wrap>
             <Button
               href="/work"
-              variant="secondary"
+              variant="primary"
               size="l"
               arrowIcon
-              style={{
-                borderRadius: "999px",
-                padding: "12px 22px",
-              }}
+              style={{ borderRadius: "8px", padding: "10px 24px" }}
             >
               View Work
+            </Button>
+            <Button
+              href={about.path}
+              variant="secondary"
+              size="l"
+              style={{ borderRadius: "8px", padding: "10px 24px" }}
+            >
+              About Me
             </Button>
           </Row>
         </Column>
       </RevealFx>
 
-      {/* WHAT I DO */}
+      {/* SPLIT SECTION */}
       <RevealFx translateY={12} delay={0.2}>
         <Column fillWidth gap="xl">
-          <Heading variant="heading-strong-l"></Heading>
+          {/* Subtle Divider */}
+          <div
+            style={{
+              height: "1px",
+              width: "100%",
+              background: "rgba(255,255,255,0.1)",
+              marginBottom: "16px",
+            }}
+          />
 
-          <Row gap="l" wrap>
-            <Column gap="xs" style={{ flex: "1 1 250px" ,display:"flex", flexDirection:"column",alignItems:'center'}}>
-              <Badge>Frontend</Badge>
-              <Text onBackground="neutral-weak" style={{ textAlign: "center" }}>
-                Scalable React & Next.js apps with performance-first architecture.
-              </Text>
+          <Row gap="xl" wrap>
+            {/* LEFT COLUMN */}
+            <Column gap="l" style={{ flex: "1 1 300px" }}>
+              <Heading variant="heading-strong-xl">Capabilities</Heading>
+
+              <Column gap="m">
+                <Column gap="4">
+                  <Heading variant="heading-strong-s">
+                    Engineering Leadership
+                  </Heading>
+                  <Text onBackground="neutral-weak" style={{ lineHeight: 1.5 }}>
+                    Lead a 17-member team across Frontend, Backend, Mobile, and
+                    AI, driving planning, execution, and delivery.
+                  </Text>
+                </Column>
+
+                <Column gap="4">
+                  <Heading variant="heading-strong-s">
+                    Frontend Architecture
+                  </Heading>
+                  <Text onBackground="neutral-weak" style={{ lineHeight: 1.5 }}>
+                    Design scalable React and Next.js systems focusing on
+                    performance, maintainability, and UX.
+                  </Text>
+                </Column>
+
+                <Column gap="4">
+                  <Heading variant="heading-strong-s">AI & Automation</Heading>
+                  <Text onBackground="neutral-weak" style={{ lineHeight: 1.5 }}>
+                    Build AI-assisted engineering workflows, backend services,
+                    and AI-powered product features.
+                  </Text>
+                </Column>
+              </Column>
             </Column>
 
-            <Column gap="xs" style={{ flex: "1 1 250px" ,display:"flex", flexDirection:"column",alignItems:'center'}}>
-              <Badge>AI Integration</Badge>
-              <Text onBackground="neutral-weak" style={{ textAlign: "center" }}>
-                LLM APIs, automation, and AI-powered SaaS features.
-              </Text>
-            </Column>
+            {/* RIGHT COLUMN */}
+            <Column gap="l" style={{ flex: "1 1 300px" }}>
+              <Heading variant="heading-strong-xl">By the Numbers</Heading>
 
-            <Column gap="xs" style={{ flex: "1 1 250px" ,display:"flex", flexDirection:"column",alignItems:'center'}}>
-              <Badge>System Design</Badge>
-              <Text onBackground="neutral-weak" style={{ textAlign: "center" }}>
-                UI systems, state management, and scalable frontend architecture.
-              </Text>
+              <Row gap="l" wrap>
+                <Column gap="4" style={{ flex: "1 1 120px" }}>
+                  <Heading variant="display-strong-s">17</Heading>
+                  <Text onBackground="neutral-weak" variant="body-default-s">
+                    Engineers Led
+                  </Text>
+                </Column>
+
+                <Column gap="4" style={{ flex: "1 1 120px" }}>
+                  <Heading variant="display-strong-s">45%</Heading>
+                  <Text onBackground="neutral-weak" variant="body-default-s">
+                    Performance Bump
+                  </Text>
+                </Column>
+
+                <Column gap="4" style={{ flex: "1 1 120px" }}>
+                  <Heading variant="display-strong-s">~60%</Heading>
+                  <Text onBackground="neutral-weak" variant="body-default-s">
+                    Faster Onboarding
+                  </Text>
+                </Column>
+
+                <Column gap="4" style={{ flex: "1 1 120px" }}>
+                  <Heading variant="display-strong-s">3x</Heading>
+                  <Text onBackground="neutral-weak" variant="body-default-s">
+                    AI Productivity
+                  </Text>
+                </Column>
+              </Row>
+
+              <Button
+                href={`mailto:${person.email}`}
+                variant="secondary"
+                size="m"
+                arrowIcon
+                style={{
+                  marginTop: "16px",
+                  alignSelf: "flex-start",
+                  borderRadius: "8px",
+                }}
+              >
+                Let&apos;s get in touch
+              </Button>
             </Column>
           </Row>
-        </Column>
-      </RevealFx>
-
-      {/* FINAL CTA */}
-      <RevealFx translateY={10} delay={0.25}>
-        <Column fillWidth horizontal="center" gap="m">
-          <Heading variant="heading-strong-l" style={{ textAlign: "center" }}>
-            Let’s build something impactful
-          </Heading>
-
-          <Text
-            onBackground="neutral-weak"
-            style={{ textAlign: "center", maxWidth: "600px" }}
-          >
-            Open to frontend engineering and AI-focused SaaS roles.
-          </Text>
-
-          <Button
-            href="mailto:your@email.com"
-            variant="primary"
-            size="l"
-            arrowIcon
-            style={{
-              borderRadius: "999px",
-              padding: "12px 22px",
-            }}
-          >
-            Contact
-          </Button>
         </Column>
       </RevealFx>
     </Column>
